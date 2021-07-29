@@ -15,21 +15,23 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #a3938c;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #611229;
+  font-family: 'Allerta Stencil', sans-serif;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #611229;
   font-size: 1rem;
   letter-spacing: .8rem;
   font-weight: bold;
+  font-family: 'Allerta Stencil', sans-serif;
 }
 
 @keyframes App-logo-spin {
@@ -45,4 +47,8 @@
   .App-link {
     font-size: 2rem;
   }
+}
+
+.img-xar{
+  width: 30vw;
 }
