@@ -1,16 +1,10 @@
-import "./App.css";
+import React from "react";
+import Home from "./page";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src="/handel_logo.svg" alt="logo" />
-        <p className="App-link">En camino</p>
-        <img src="/han.png" className="img-xar" alt="logo" />
-        <p>Esperanos</p>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <>
+    <Home />
+  </>
+);
 
 export default App;

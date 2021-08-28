@@ -1,0 +1,198 @@
+@banner5: banner5;
+
+.@{banner5} {
+  // 如果在第一屏且导航位置为 relative, 一屏为 height: calc(~"100vh - 64px");
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #fdfdfd;
+  background-image: linear-gradient(to top, fade(#fdfdfd, 30) 0%, fade(#c1daff, 30) 100%);
+  overflow: hidden;
+
+  & &-page {
+    padding: 1px 0 0;
+  }
+
+  &-title {
+    font-size: 48px;
+    line-height: 1.5;
+    color: #611229;
+    margin-bottom: 8px;
+    font-family: 'Allerta Stencil';
+
+    &-wrapper {
+      width: 40%;
+      max-width: 450px;
+      position: relative;
+      top: 30%;
+      left: 24px;
+      font-family: 'PingFang SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    }
+  }
+
+  &-explain {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  &-content {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 48px;
+  }
+
+  &-button-wrapper {
+    .@{banner5}-button {
+      background-image: linear-gradient(to right bottom, #360714 0%, #611229 0%);
+      box-shadow: 0 8px 24px fade(#360714, 35);
+      border-radius: 20px;
+      border: none;
+      padding: 0 42px;
+      line-height: 40px;
+      height: 40px;
+      transition: transform .3s, box-shadow .3s;
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 13px 24px fade(#360714, 45);
+        background-image: linear-gradient(to right bottom, #360714 0%, #611229 0%);
+      }
+    }
+  }
+
+  &-image {
+    overflow: hidden;
+    width: 55%;
+    max-width: 710px;
+    position: absolute;
+    top: 15%;
+    right: 24px;
+  }
+}
+
+.about-box {
+  padding: 2rem 0;
+  width: 60vw;
+  margin: auto;
+  text-align: center;
+}
+
+.ant-tabs-nav {
+  margin: 1rem auto !important;
+}
+
+.about-img {
+  width: 40vw;
+}
+
+.about-section {
+  width: 80%;
+  text-align: justify;
+  margin: auto;
+  padding: 1rem 0;
+}
+
+.ant-card-head-wrapper .ant-card-head-title {
+  font-size: 32px;
+  font-family: 'Allerta Stencil';
+  color: #611229;
+}
+
+.feature7-title-h1 {
+  font-family: 'Allerta Stencil';
+}
+
+.feature6-title-h1 {
+  font-family: 'Allerta Stencil';
+  color: #611229;
+}
+
+.ant-tabs-ink-bar {
+background-color: #611229 !important;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #611229 !important; 
+}
+
+.ant-menu-horizontal > .ant-menu-item-selected a {
+  color: #611229 !important; 
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected::after {
+  border-bottom: 2px solid #611229 !important; 
+}
+
+.ant-menu-item-selected a, .ant-menu-item-selected a:hover {
+  color: #611229 !important; 
+}
+
+.ant-menu-light .ant-menu-item:hover, .ant-menu-light .ant-menu-item-active, .ant-menu-light .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open, .ant-menu-light .ant-menu-submenu-active, .ant-menu-light .ant-menu-submenu-title:hover {
+  color: #621027b2 !important; 
+}
+
+.site-card-border-less-wrapper {
+  text-align: center;
+  background-color: #636161;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .@{banner5} {
+    min-height: 500px;
+
+    & &-page.home-page {
+      padding-top: 1px;
+      padding-bottom: 0;
+    }
+
+    &-title-wrapper {
+      text-align: center;
+      position: static;
+      width: 100%;
+      margin-top: 64px;
+      left: 0;
+      top: 0;
+    }
+
+    &-title {
+      font-size: 32px;
+    }
+
+    &-explain {
+      font-size: 18px;
+    }
+
+    &-content {
+      font-size: 14px;
+    }
+
+    &-image {
+      position: static;
+      width: 100%;
+      top: 0;
+      right: 0;
+      margin: 32px 0 24px;
+    }
+  }
+  .banner-svg {
+    text-align: center;
+  }
+  .banner-svg svg {
+    width: 80vw;
+    height: auto;
+  }
+  .about-box {
+    width: 90vw;
+    margin: auto;
+  }
+  .about-img {
+    width: 70vw;
+  }
+  .ant-card {
+    width: 80vw !important;
+  }
+  .han-img {
+    width: 80%;
+  }
+}
